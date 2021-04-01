@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "babel src -d lib parcel build src/index.html --public-url /goit-js-hw-09/",
+    "build": "babel src -d lib",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-nuke-dist": "^1.0.1"
   },
